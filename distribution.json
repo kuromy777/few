@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "rss": "<LINK TO RSS FEED>",
+  "rss": "https://firebasestorage.googleapis.com/v0/b/yokaihardcoreoficial.appspot.com/o/MISIONES.xml?alt=media&token=2c53f0b4-f301-426c-8ce8-969e06e7e6df",
   "discord": {
     "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
     "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
