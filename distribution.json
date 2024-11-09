@@ -618,8 +618,11 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 53510861,
-            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/essential_1-3-4-1_forge_1-19-2.jar",
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/essential_1-3-4-1_forge_1-19-2.jar",
             "MD5": "8038a56cc83405d6952e013607aedf8c"
+          },
+          "required": {
+            "value": false
           }
         },
         {
