@@ -543,6 +543,19 @@
           }
         },
         {
+          "id": "dev.banzetta:droplight:1.0.6@jar",
+          "name": "Droplight",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 372450,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/Droplight-1.19.2-forge-1.0.6.jar",
+            "MD5": "a2ee03859f7acd9419fc1ce2f7f47062"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
           "id": "net.aurelj:dungeons_arise:2.1.56-1.19.2@jar",
           "name": "When Dungeons Arise",
           "type": "ForgeMod",
@@ -707,6 +720,19 @@
             "size": 890153,
             "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/gnumus_settlement_[Forge]1.19.2_v1.8.jar",
             "MD5": "dea4c0826540903d4b7ea0ce8ff44e53"
+          }
+        },
+        {
+          "id": "com.anthonyhilyard:iceberg:1.1.25@jar",
+          "name": "Iceberg",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 134551,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/Iceberg-1.20.1-forge-1.1.25.jar",
+            "MD5": "cda8af806d0de012f5c7012ea51c155f"
+          },
+          "required": {
+            "value": false
           }
         },
         {
@@ -905,6 +931,19 @@
             "size": 181297,
             "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/player-animation-lib-forge-1.0.2.jar",
             "MD5": "32be10092ee8672a2e3a36a019007a96"
+          }
+        },
+        {
+          "id": "com.anthonyhilyard:prism:1.0.2@jar",
+          "name": "Prism",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 51537,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/Prism-1.19.1-1.0.2.jar",
+            "MD5": "2789a66452ba8b58c843ea991799933e"
+          },
+          "required": {
+            "value": false
           }
         },
         {
