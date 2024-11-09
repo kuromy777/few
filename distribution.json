@@ -1039,6 +1039,72 @@
           "required": {
             "value": false
           }
+        },
+        {
+          "id": "FreshAnimations_v1.8.zip",
+          "name": "FreshAnimations_v1.8.zip",
+          "type": "File",
+          "artifact": {
+            "size": 470506,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/files/resourcepacks/FreshAnimations_v1.8.zip",
+            "MD5": "8c35864cfcaa378b5f110048bbcc8c40",
+            "path": "resourcepacks/FreshAnimations_v1.8.zip"
+          }
+        },
+        {
+          "id": "TexturePack Base JuakoCl.zip",
+          "name": "TexturePack Base JuakoCl.zip",
+          "type": "File",
+          "artifact": {
+            "size": 2751,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/files/resourcepacks/TexturePack%20Base%20JuakoCl.zip",
+            "MD5": "1d5cba72fa9c4f519cbc7c69d4c39f24",
+            "path": "resourcepacks/TexturePack Base JuakoCl.zip"
+          }
+        },
+        {
+          "id": "YOKAI.zip",
+          "name": "YOKAI.zip",
+          "type": "File",
+          "artifact": {
+            "size": 26429415,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/files/resourcepacks/YOKAI.zip",
+            "MD5": "d4efe7d6d509ca7e8a4afbf261c539a5",
+            "path": "resourcepacks/YOKAI.zip"
+          }
+        },
+        {
+          "id": "ComplementaryReimagined_r1.4.zip",
+          "name": "ComplementaryReimagined_r1.4.zip",
+          "type": "File",
+          "artifact": {
+            "size": 229655,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/files/shaderpacks/ComplementaryReimagined_r1.4.zip",
+            "MD5": "640e4e7cb416bbdb08bcbf7cdc9ea6bf",
+            "path": "shaderpacks/ComplementaryReimagined_r1.4.zip"
+          }
+        },
+        {
+          "id": "§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip",
+          "name": "§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip",
+          "type": "File",
+          "artifact": {
+            "size": 7363201,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/files/shaderpacks/%C2%A7r%C2%A7lAstra%C2%A74%C2%A7lLex%C2%A7r%C2%A7l_By_LexBoosT_%C2%A74%C2%A7lV80.2%C2%A7r%C2%A7l.zip",
+            "MD5": "3f41eebf6d0db064d56a6c56d77dd512",
+            "path": "shaderpacks/§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip"
+          }
+        },
+        {
+          "id": "§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip.txt",
+          "name": "§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip.txt",
+          "type": "File",
+          "artifact": {
+            "size": 319,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/files/shaderpacks/%C2%A7r%C2%A7lAstra%C2%A74%C2%A7lLex%C2%A7r%C2%A7l_By_LexBoosT_%C2%A74%C2%A7lV80.2%C2%A7r%C2%A7l.zip.txt",
+            "MD5": "49e3985137e4f53a39a7a6c93beb92c6",
+            "path": "shaderpacks/§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip.txt"
+          }
         }
       ]
     }
