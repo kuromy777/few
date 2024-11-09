@@ -453,6 +453,16 @@
           }
         },
         {
+          "id": "net.mcreator.itemsdedinoflyu:items_de_dinoflyu:1.0.0@jar",
+          "name": "Items de DINOFLY7u7",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 23963871,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/beta%20items%20dino.jar",
+            "MD5": "777b5ac1d415181313b9733503eabca5"
+          }
+        },
+        {
           "id": "net.mcreator.borninchaosv:born_in_chaos_v1:1.0.0@jar",
           "name": "Born in Chaos ",
           "type": "ForgeMod",
@@ -940,16 +950,6 @@
             "size": 1345818,
             "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/relics-1.19.2-0.6.2.4.jar",
             "MD5": "2df3ffc7db2d675b9b5c7f4403387521"
-          }
-        },
-        {
-          "id": "net.mcreator.itemsdedinoflyu:items_de_dinoflyu:1.0.0@jar",
-          "name": "Items de DINOFLY7u7",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 23054778,
-            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/runas%20modcito.jar",
-            "MD5": "0424e0e2bc35e68d1e553f478e9b4416"
           }
         },
         {
