@@ -613,19 +613,6 @@
           }
         },
         {
-          "id": "generated.forgemod:essential_1:3-4-1_forge_1-19-2@jar",
-          "name": "Essential_1",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 53510861,
-            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/essential_1-3-4-1_forge_1-19-2.jar",
-            "MD5": "8038a56cc83405d6952e013607aedf8c"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
           "id": "de.cheaterpaul:fallingleaves:1.3.1@jar",
           "name": "Falling Leaves",
           "type": "ForgeMod",
@@ -774,6 +761,20 @@
           }
         },
         {
+          "id": "com.github.l_ender:cataclysm:2.15@jar",
+          "name": "Cataclysm Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 71557182,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionaloff/L_Enders_Cataclysm-2.15-1.19.2.jar",
+            "MD5": "00894edc55ff52a267de6405bf4b863f"
+          },
+          "required": {
+            "value": false,
+            "def": false
+          }
+        },
+        {
           "id": "kowi2003.lasermod:lasermod:1.1.0@jar",
           "name": "KOWI's Laser Mod",
           "type": "ForgeMod",
@@ -781,6 +782,20 @@
             "size": 1370412,
             "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/lasermod-1.19-1.1.0.jar",
             "MD5": "a5d21063750fb5b1e621439bb897b4d4"
+          }
+        },
+        {
+          "id": "com.github.l_ender:lionfishapi:1.8@jar",
+          "name": "LionfishAPI",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 126780,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionaloff/lionfishapi-1.8.jar",
+            "MD5": "67b23826ab923dbd19735434c546d44f"
+          },
+          "required": {
+            "value": false,
+            "def": false
           }
         },
         {
