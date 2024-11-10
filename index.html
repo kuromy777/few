@@ -256,7 +256,7 @@
 </div>
 
 <script>
-    // Variables para controlar el estado de las noticias
+   // Variables para controlar el estado de las noticias
     let currentNews = 2;
     const noticias = document.querySelectorAll('.noticia');
     const newsCounter = document.getElementById('news-counter');
@@ -277,11 +277,11 @@
         noticias[currentNews - 1].classList.add('active');
 
         // Actualizar el contador
-        newsCounter.textContent = ${currentNews} de ${noticias.length}; // Eliminada la palabra "Noticia"
+        newsCounter.textContent = `${currentNews} de ${noticias.length}`;
     }
 
     // Inicializar el contador
-    newsCounter.textContent = ${currentNews} de ${noticias.length}; // Eliminada la palabra "Noticia"
+    newsCounter.textContent = `${currentNews} de ${noticias.length}`;
 </script>
 
 </body>
