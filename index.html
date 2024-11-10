@@ -251,7 +251,7 @@
     <div class="arrow-right" onclick="changeNews(1)">&#9654;</div>
 
     <!-- Contador de noticias centrado -->
-   <div class="socializer" data-features="32px,circle,opacity,icon-white,bg-dark,pad" bis_skin_checked="1" data-sites="discord,youtube,twitch,tiktok,twitter" data-meta-link="" data-meta-title="" data-meta-discord="https://discord.com/invite/xRed77nYk7" data-meta-youtube="https://www.youtube.com/@kuromy888" data-meta-twitch="https://www.twitch.tv/kuromy888" data-meta-tiktok="https://www.tiktok.com/@kuromy888" data-meta-twitter="https://x.com/Kuromy888"></div>
+    <div class="news-counter" id="news-counter"></div>
 
 </div>
 
@@ -277,11 +277,11 @@
         noticias[currentNews - 1].classList.add('active');
 
         // Actualizar el contador
-        newsCounter.textContent = `${currentNews} de ${noticias.length}`; // Eliminada la palabra "Noticia"
+        newsCounter.textContent = ${currentNews} de ${noticias.length}; // Eliminada la palabra "Noticia"
     }
 
     // Inicializar el contador
-    newsCounter.textContent = `${currentNews} de ${noticias.length}`; // Eliminada la palabra "Noticia"
+    newsCounter.textContent = ${currentNews} de ${noticias.length}; // Eliminada la palabra "Noticia"
 </script>
 
 </body>
