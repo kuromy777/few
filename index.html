@@ -18,6 +18,7 @@
             padding: 0;
             overflow: hidden; /* Evitar scroll en el body */
         }
+
         .container {
             width: 1169px;
             height: 552px;
@@ -47,7 +48,6 @@
             font-family: 'Minercraftory'; /* Fuente de letra Minercraftory */
             color: white; /* Cambiar a blanco */
             animation: rainbow-outline 2s infinite; /* Animación de contorno RGB con menor velocidad */
-            /* text-shadow: 0 0 2px red, 0 0 4px rgb(111, 0, 255), 0 0 6px rgb(119, 0, 255), 0 0 8px green, 0 0 10px blue, 0 0 12px purple; Menos brillo */
         }
 
         /* Animación de contorno RGB */
@@ -134,19 +134,6 @@
             right: 10px;
         }
 
-        /* Contador de noticias centrado */
-        .news-counter {
-            text-align: center;
-            font-size: 16px;
-            color: #ffffff;
-            margin-top: 20px;
-            position: fixed;
-            bottom: 10px;
-            width: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
         /* Noticia oculta por defecto */
         .noticia {
             display: none;
@@ -154,60 +141,60 @@
         .noticia.active {
             display: block;
         }
-        .social-media-center {
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    margin-top: 20px; /* Espaciado superior, ajusta según tu preferencia */
-}
-
+        .social-media-center { 
+        display: flex;
+        justify-content: center;
+        position: absolute; /* Posiciona el contenedor en la parte inferior del contenedor principal */
+        bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+        width: 94%;
+        }
+    
     </style>
 </head>
 <body>
 
 <div class="container">
     <!-- Noticia 1 -->
-    <div class="noticia active" id="noticia-1">
-        <!-- Título dividido -->
+    <div class="noticia" id="noticia-1" data-date="2024-09-25">
         <div class="title">
             <div class="title-small">CAMBIOS DE</div>
             <div class="title-large">ENDERFLY</div>
         </div>
-        <!-- Fecha alineada al centro -->
         <div class="subtitle">
             <div>Miércoles</div>
             <div class="date">25<span class="dot">.</span>SEP<span class="dot">.</span>24</div>
         </div>
 
-        <!-- Secciones de cambios -->
         <div class="section-container">
-            <div class="section">
-                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d2/Wooden_Pickaxe_JE3_BE3.png" alt="Icono Decreto">
-                <div>
-                    <h2>PRIMER DECRETO</h2>
-                    <p>Como mi primer decreto utilizando el Cetro Ancestral, digo que ahora <span class="highlight-red">no se puede respirar bajo el agua</span> con pociones de respiración, puertas, antorchas, o cualquier otra cosa que lo intenten.</p>
+            <div class="section-container">
+                <div class="section">
+                    <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d2/Wooden_Pickaxe_JE3_BE3.png" alt="Icono Decreto">
+                    <div>
+                        <h2>PRIMER DECRETO</h2>
+                        <p>Como mi primer decreto utilizando el Cetro Ancestral, digo que ahora <span class="highlight-red">no se puede respirar bajo el agua</span> con pociones de respiración, puertas, antorchas, o cualquier otra cosa que lo intenten.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="section">
-                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6f/Elytra_JE2_BE2.png" alt="Icono Lava">
-                <div>
-                    <h2>LAVA RESBALADIZA</h2>
-                    <p>Las fuerzas de Van der Waals están colapsando, Revill se está aprovechando de eso. Ahora, la lava fluye igual de rápido que el agua.</p>
+    
+                <div class="section">
+                    <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6f/Elytra_JE2_BE2.png" alt="Icono Lava">
+                    <div>
+                        <h2>LAVA RESBALADIZA</h2>
+                        <p>Las fuerzas de Van der Waals están colapsando, Revill se está aprovechando de eso. Ahora, la lava fluye igual de rápido que el agua.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="section">
-                <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ed/Enchanted_Golden_Apple_JE2_BE2.gif" alt="Icono Revill">
-                <div>
-                    <h2>MOMENTO REVILL</h2>
-                    <p>El "Momento Revill" es un evento causado por Revill usando el Cetro Ancestral, propone retos a todos los héroes con castigos.</p>
+    
+                <div class="section">
+                    <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ed/Enchanted_Golden_Apple_JE2_BE2.gif" alt="Icono Revill">
+                    <div>
+                        <h2>MOMENTO REVILL</h2>
+                        <p>El "Momento Revill" es un evento causado por Revill usando el Cetro Ancestral, propone retos a todos los héroes con castigos.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Noticia 2 (Nueva noticia añadida) -->
-    <div class="noticia" id="noticia-2">
+    </div> 
+    <!-- Noticia 2 -->
+    <div class="noticia" id="noticia-2" data-date="2024-09-26">
         <div class="title">
             <div class="title-small">NUEVOS RETOS</div>
             <div class="title-large">EXTRAORDINARIOS</div>
@@ -248,47 +235,67 @@
     <div class="arrow-left" onclick="changeNews(-1)">&#9664;</div>
     <div class="arrow-right" onclick="changeNews(1)">&#9654;</div>
 
-    <!-- social media centrado -->
+
+    <!-- Social Media -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/css/socializer.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <div class="social-media-center">
+        <div class="socializer" data-features="32px,circle,opacity,icon-white,bg-dark,pad" bis_skin_checked="1" data-sites="discord,youtube,twitch,tiktok,twitter" data-meta-link="" data-meta-title="" data-meta-discord="https://discord.com/invite/xRed77nYk7" data-meta-youtube="https://www.youtube.com/@kuromy888" data-meta-twitch="https://www.twitch.tv/kuromy888" data-meta-tiktok="https://www.tiktok.com/@kuromy888" data-meta-twitter="https://x.com/Kuromy888"></div>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/js/socializer.min.js"></script>
+    <script>
+    (function(){
+        socializer( '.socializer' );
+    }());
+    </script>
+
 </div>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/css/socializer.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
-<div class="social-media-center">
-    <div class="socializer" data-features="32px,circle,opacity,icon-white,bg-dark,pad" bis_skin_checked="1" data-sites="discord,youtube,twitch,tiktok,twitter" data-meta-link="" data-meta-title="" data-meta-discord="https://discord.com/invite/xRed77nYk7" data-meta-youtube="https://www.youtube.com/@kuromy888" data-meta-twitch="https://www.twitch.tv/kuromy888" data-meta-tiktok="https://www.tiktok.com/@kuromy888" data-meta-twitter="https://x.com/Kuromy888"></div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/js/socializer.min.js"></script>
 <script>
-(function(){
-    socializer( '.socializer' );
-}());
-</script>
-<script>
-   // Variables para controlar el estado de las noticias
-    let currentNews = 2;
-    const noticias = document.querySelectorAll('.noticia');
-    const newsCounter = document.getElementById('news-counter');
+    document.addEventListener("DOMContentLoaded", function() {
+        // Obtener todas las noticias
+        const noticias = document.querySelectorAll(".noticia");
 
-    function changeNews(direction) {
-        // Ocultar la noticia actual
-        noticias[currentNews - 1].classList.remove('active');
+        // Convertir el NodeList a un array
+        const noticiasArray = Array.from(noticias);
 
-        // Calcular la nueva noticia
-        currentNews += direction;
-        if (currentNews < 1) {
-            currentNews = noticias.length;
-        } else if (currentNews > noticias.length) {
-            currentNews = 1;
-        }
+        // Ordenar las noticias por fecha (más reciente primero)
+        noticiasArray.sort((a, b) => {
+            const dateA = new Date(a.getAttribute("data-date"));
+            const dateB = new Date(b.getAttribute("data-date"));
+            return dateB - dateA;  // Orden descendente
+        });
 
-        // Mostrar la nueva noticia
-        noticias[currentNews - 1].classList.add('active');
+        // Colocar las noticias ordenadas en el contenedor
+        const container = document.querySelector(".container");
+        noticiasArray.forEach(noticia => {
+            container.appendChild(noticia);
+        });
 
-        // Actualizar el contador
-        newsCounter.textContent = `${currentNews} de ${noticias.length}`;
+        // Mostrar la primera noticia
+        mostrarNoticia(0);
+    });
+
+    let currentNewsIndex = 0;
+
+    // Función para mostrar la noticia correspondiente
+    function mostrarNoticia(index) {
+        const noticias = document.querySelectorAll(".noticia");
+        // Ocultar todas las noticias
+        noticias.forEach(noticia => noticia.classList.remove("active"));
+        // Mostrar la noticia activa
+        noticias[index].classList.add("active");
+        currentNewsIndex = index;
     }
 
-    // Inicializar el contador
-    newsCounter.textContent = `${currentNews} de ${noticias.length}`;
+    // Función para cambiar entre noticias usando las flechas
+    function changeNews(direction) {
+        const noticias = document.querySelectorAll(".noticia");
+        currentNewsIndex += direction;
+        if (currentNewsIndex < 0) currentNewsIndex = noticias.length - 1;
+        if (currentNewsIndex >= noticias.length) currentNewsIndex = 0;
+        mostrarNoticia(currentNewsIndex);
+    }
 </script>
 
 </body>
