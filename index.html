@@ -154,6 +154,12 @@
         .noticia.active {
             display: block;
         }
+        .social-media-center {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Espaciado superior, ajusta según tu preferencia */
+}
+
     </style>
 </head>
 <body>
@@ -250,11 +256,20 @@
     <div class="arrow-left" onclick="changeNews(-1)">&#9664;</div>
     <div class="arrow-right" onclick="changeNews(1)">&#9654;</div>
 
-    <!-- Contador de noticias centrado -->
-    <div class="news-counter" id="news-counter"></div>
-
+    <!-- social media centrado -->
+</div>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/css/socializer.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+<div class="social-media-center">
+    <div class="socializer" data-features="32px,circle,opacity,icon-white,bg-dark,pad" bis_skin_checked="1" data-sites="discord,youtube,twitch,tiktok,twitter" data-meta-link="" data-meta-title="" data-meta-discord="https://discord.com/invite/xRed77nYk7" data-meta-youtube="https://www.youtube.com/@kuromy888" data-meta-twitch="https://www.twitch.tv/kuromy888" data-meta-tiktok="https://www.tiktok.com/@kuromy888" data-meta-twitter="https://x.com/Kuromy888"></div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/js/socializer.min.js"></script>
+<script>
+(function(){
+    socializer( '.socializer' );
+}());
+</script>
 <script>
    // Variables para controlar el estado de las noticias
     let currentNews = 2;
