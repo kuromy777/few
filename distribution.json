@@ -413,6 +413,16 @@
           ]
         },
         {
+          "id": "net.mcreator.animalistica:animalistic_a:1.2.0@jar",
+          "name": "Animalistic",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3838685,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/Animalistic_mod_1.2.0_1.19.2.jar",
+            "MD5": "3adcb257e4560224459fab2f23176a39"
+          }
+        },
+        {
           "id": "com.obscuria:aquamirae:6.API15@jar",
           "name": "Aquamirae",
           "type": "ForgeMod",
@@ -570,6 +580,16 @@
             "size": 1336740,
             "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/easy_npc_1.19.2-4.5.1.jar",
             "MD5": "aad974ca73f6c9590824f30b9ea1004d"
+          }
+        },
+        {
+          "id": "de.markusbordihn.easynpcepicfight:easy_npc_epic_fight:4.4.1@jar",
+          "name": "Bo's Easy NPC: Epic Fight",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 70129,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/easy_npc_epic_fight_1.19.2-4.4.1.jar",
+            "MD5": "90ed1d8faf2f1ba7eb9d626e431c1eda"
           }
         },
         {
@@ -787,6 +807,20 @@
             "size": 3992816,
             "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/mahoutsukai-1.19.2-v1.34.62.jar",
             "MD5": "d10847247223a08d125b90b575fa24c0"
+          }
+        },
+        {
+          "id": "net.minecraftcapes:minecraftcapes:12.3.6@jar",
+          "name": "MinecraftCapes Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 42882,
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionaloff/MinecraftCapes%20Forge%201.19.2-12.3.6.jar",
+            "MD5": "dc1a06a5fc466dacdeb9a560ad771bff"
+          },
+          "required": {
+            "value": false,
+            "def": false
           }
         },
         {
