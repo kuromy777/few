@@ -770,19 +770,6 @@
           }
         },
         {
-          "id": "com.github.l_ender:cataclysm:2.15@jar",
-          "name": "Cataclysm Mod",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 71557182,
-            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/L_Enders_Cataclysm-2.15-1.19.2.jar",
-            "MD5": "00894edc55ff52a267de6405bf4b863f"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
           "id": "kowi2003.lasermod:lasermod:1.1.0@jar",
           "name": "KOWI's Laser Mod",
           "type": "ForgeMod",
@@ -790,19 +777,6 @@
             "size": 1370412,
             "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/required/lasermod-1.19-1.1.0.jar",
             "MD5": "a5d21063750fb5b1e621439bb897b4d4"
-          }
-        },
-        {
-          "id": "com.github.l_ender:lionfishapi:1.8@jar",
-          "name": "LionfishAPI",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 126780,
-            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/lionfishapi-1.8.jar",
-            "MD5": "67b23826ab923dbd19735434c546d44f"
-          },
-          "required": {
-            "value": false
           }
         },
         {
