@@ -141,14 +141,6 @@
         .noticia.active {
             display: block;
         }
-        .social-media-center { 
-        display: flex;
-        justify-content: center;
-        position: absolute; /* Posiciona el contenedor en la parte inferior del contenedor principal */
-        bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-        width: 80%;
-        }
-    
     </style>
 </head>
 <body>
@@ -237,17 +229,54 @@
 
 
     <!-- Social Media -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/css/socializer.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/css/socializer.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+<style>
+    /* Contenedor de iconos centrado en la parte inferior */
+    .social-media-center {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    /* Estilo de los iconos */
+    .socializer-icon {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        line-height: 48px;
+        font-size: 24px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Colores de fondo de cada red social */
+    .socializer-icon.discord { background-color: #5865F2; }
+    .socializer-icon.youtube { background-color: #FF0000; }
+    .socializer-icon.twitch { background-color: #9146FF; }
+    .socializer-icon.tiktok { background-color: #010101; }
+    .socializer-icon.twitter { background-color: #1DA1F2; }
+
+    /* Efecto hover */
+    .socializer-icon:hover {
+        transform: scale(1.2);
+        filter: brightness(1.2);
+    }
+</style>
+
     <div class="social-media-center">
-        <div class="socializer" data-features="32px,circle,opacity,icon-white,bg-dark,pad" bis_skin_checked="1" data-sites="discord,youtube,twitch,tiktok,twitter" data-meta-link="" data-meta-title="" data-meta-discord="https://discord.com/invite/xRed77nYk7" data-meta-youtube="https://www.youtube.com/@kuromy888" data-meta-twitch="https://www.twitch.tv/kuromy888" data-meta-tiktok="https://www.tiktok.com/@kuromy888" data-meta-twitter="https://x.com/Kuromy888"></div>
-    </div>    
-    <script src="https://cdn.jsdelivr.net/gh/vaakash/socializer@f4c4e9/js/socializer.min.js"></script>
-    <script>
-    (function(){
-        socializer( '.socializer' );
-    }());
-    </script>
+        <a href="https://discord.com/invite/xRed77nYk7" target="_blank" class="socializer-icon discord"><i class="fab fa-discord"></i></a>
+        <a href="https://www.youtube.com/@kuromy888" target="_blank" class="socializer-icon youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.twitch.tv/kuromy888" target="_blank" class="socializer-icon twitch"><i class="fab fa-twitch"></i></a>
+        <a href="https://www.tiktok.com/@kuromy888" target="_blank" class="socializer-icon tiktok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://x.com/Kuromy888" target="_blank" class="socializer-icon twitter"><i class="fab fa-twitter"></i></a>
+    </div>
 </div>
 
 <script>
