@@ -248,6 +248,17 @@
         socializer( '.socializer' );
     }());
     </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Selecciona todos los enlaces generados por la librería `socializer`
+        const socialLinks = document.querySelectorAll('.socializer a');
+        
+        // Agrega el atributo target="_blank" a cada enlace
+        socialLinks.forEach(link => {
+            link.setAttribute("target", "_blank");
+        });
+    });
+</script>
 
 </div>
 
