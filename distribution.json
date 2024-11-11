@@ -752,12 +752,11 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 1093037,
-            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionaloff/jei-1.19.2-forge-11.6.0.1020.jar",
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/jei-1.19.2-forge-11.6.0.1020.jar",
             "MD5": "d471a094c92c0e91a0da4fa3634a821d"
           },
           "required": {
-            "value": false,
-            "def": false
+            "value": false
           }
         },
         {
@@ -776,12 +775,11 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 71557182,
-            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionaloff/L_Enders_Cataclysm-2.15-1.19.2.jar",
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/L_Enders_Cataclysm-2.15-1.19.2.jar",
             "MD5": "00894edc55ff52a267de6405bf4b863f"
           },
           "required": {
-            "value": false,
-            "def": false
+            "value": false
           }
         },
         {
@@ -800,12 +798,11 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 126780,
-            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionaloff/lionfishapi-1.8.jar",
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/lionfishapi-1.8.jar",
             "MD5": "67b23826ab923dbd19735434c546d44f"
           },
           "required": {
-            "value": false,
-            "def": false
+            "value": false
           }
         },
         {
@@ -864,12 +861,11 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 3499284,
-            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionaloff/oculus-mc1.19.2-1.6.9.jar",
+            "url": "https://yokaihard.web.app/host/servers/yokai-1.19.2/forgemods/optionalon/oculus-mc1.19.2-1.6.9.jar",
             "MD5": "5c62ae78fcc5baba124c9ac7f950597e"
           },
           "required": {
-            "value": false,
-            "def": false
+            "value": false
           }
         },
         {
