@@ -463,6 +463,16 @@
           ]
         },
         {
+          "id": "dev.architectury:architectury:6.6.92@jar",
+          "name": "Architectury",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 559099,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/architectury-6.6.92-forge.jar",
+            "MD5": "ddf52fbc5ce9e2d1e6779d29f74cb573"
+          }
+        },
+        {
           "id": "net.mcreator:artefactos:1.0.0@jar",
           "name": "Artefactos",
           "type": "ForgeMod",
