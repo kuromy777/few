@@ -563,6 +563,16 @@
           }
         },
         {
+          "id": "com.hrznstudio:emojiful:4.0.5@jar",
+          "name": "Emojiful",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 260759,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/Emojiful-Forge-1.19.2-4.0.5-all.jar",
+            "MD5": "0dc5d349039bf0088bf59ebfa5429de3"
+          }
+        },
+        {
           "id": "io.github.kosmx.emotes:emotecraft:2.2.7-b.build.50@jar",
           "name": "Emotecraft",
           "type": "ForgeMod",
@@ -698,6 +708,16 @@
             "size": 3992816,
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/mahoutsukai-1.19.2-v1.34.62.jar",
             "MD5": "d10847247223a08d125b90b575fa24c0"
+          }
+        },
+        {
+          "id": "net.montoyo.mcef:forgecef:1.2.5@jar",
+          "name": "MCEF",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 395062,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/mcef-1.2.5.jar",
+            "MD5": "54cd59ffca34be8e156392697e120a5f"
           }
         },
         {
