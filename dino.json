@@ -563,6 +563,16 @@
           }
         },
         {
+          "id": "net.mcreator:eventos:1.0.0@jar",
+          "name": "Eventos",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3505909,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/eventos.jar",
+            "MD5": "363e222c129769d7b000c405eb7e15f5"
+          }
+        },
+        {
           "id": "de.cheaterpaul:fallingleaves:1.3.1@jar",
           "name": "Falling Leaves",
           "type": "ForgeMod",
@@ -584,6 +594,36 @@
             "size": 274952,
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/Food%20kuromy.jar",
             "MD5": "1da3e949a71a272ed690610a60dcc031"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftblibrary:1902.4.1-build.236@jar",
+          "name": "FTB Library",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 603296,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/ftb-library-forge-1902.4.1-build.236.jar",
+            "MD5": "ab990dddbef322a053b9812a44d4439f"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftbquests:1902.5.9-build.399@jar",
+          "name": "FTB Quests",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1093607,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/ftb-quests-forge-1902.5.9-build.399.jar",
+            "MD5": "3aa8732cb1e3bd29b840f36ed302d8ff"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftbteams:1902.2.14-build.123@jar",
+          "name": "FTB Teams",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 220052,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/ftb-teams-forge-1902.2.14-build.123.jar",
+            "MD5": "ce64d31414b490c35accc53c1c506c52"
           }
         },
         {
@@ -679,6 +719,16 @@
           }
         },
         {
+          "id": "tannyjung.tht:tht:4.4.6.3@jar",
+          "name": "Tan's Huge Trees",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 6090311,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/THT-Forge-1.19.2-4.4.6.3.jar",
+            "MD5": "27197818a9904e041066cd6993ed962d"
+          }
+        },
+        {
           "id": "net.mcreator.totemsserverhardcore:kuromymod:1.0.0@jar",
           "name": "Kuromy Mod",
           "type": "ForgeMod",
@@ -696,6 +746,16 @@
             "size": 8149449,
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/voicechat-forge-1.19.2-2.5.17.jar",
             "MD5": "e9956d3375c3465e97cbf8c326e39dfd"
+          }
+        },
+        {
+          "id": "reascer.wom.main:wom:19.1.7.37@jar",
+          "name": "Weapons of Minecraft",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 10102831,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/WeaponsOfMiracles-19.1.7.37.jar",
+            "MD5": "8ccca09ba92f6f8812390c83fc3ef5a1"
           }
         },
         {
@@ -742,6 +802,39 @@
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/files/servers.dat",
             "MD5": "d082119f62c7b7fcf5a4ddd036d24e7a",
             "path": "servers.dat"
+          }
+        },
+        {
+          "id": "ComplementaryReimagined_r1.4.zip",
+          "name": "ComplementaryReimagined_r1.4.zip",
+          "type": "File",
+          "artifact": {
+            "size": 229655,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/files/shaderpacks/ComplementaryReimagined_r1.4.zip",
+            "MD5": "640e4e7cb416bbdb08bcbf7cdc9ea6bf",
+            "path": "shaderpacks/ComplementaryReimagined_r1.4.zip"
+          }
+        },
+        {
+          "id": "§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip",
+          "name": "§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip",
+          "type": "File",
+          "artifact": {
+            "size": 7363201,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/files/shaderpacks/%C2%A7r%C2%A7lAstra%C2%A74%C2%A7lLex%C2%A7r%C2%A7l_By_LexBoosT_%C2%A74%C2%A7lV80.2%C2%A7r%C2%A7l.zip",
+            "MD5": "3f41eebf6d0db064d56a6c56d77dd512",
+            "path": "shaderpacks/§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip"
+          }
+        },
+        {
+          "id": "§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip.txt",
+          "name": "§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip.txt",
+          "type": "File",
+          "artifact": {
+            "size": 319,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/files/shaderpacks/%C2%A7r%C2%A7lAstra%C2%A74%C2%A7lLex%C2%A7r%C2%A7l_By_LexBoosT_%C2%A74%C2%A7lV80.2%C2%A7r%C2%A7l.zip.txt",
+            "MD5": "49e3985137e4f53a39a7a6c93beb92c6",
+            "path": "shaderpacks/§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip.txt"
           }
         }
       ]
