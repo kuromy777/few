@@ -732,6 +732,17 @@
             "MD5": "910a85637779d673fe83d1e39b07e49b",
             "path": "resourcepacks/DeathAnimation.zip"
           }
+        },
+        {
+          "id": "servers.dat",
+          "name": "servers.dat",
+          "type": "File",
+          "artifact": {
+            "size": 77,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/files/servers.dat",
+            "MD5": "d082119f62c7b7fcf5a4ddd036d24e7a",
+            "path": "servers.dat"
+          }
         }
       ]
     }
