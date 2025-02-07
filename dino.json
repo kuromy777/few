@@ -687,20 +687,6 @@
           }
         },
         {
-          "id": "mezz.jei:jei:11.6.0.1020@jar",
-          "name": "Just Enough Items",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1093037,
-            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/optionaloff/jei-1.19.2-forge-11.6.0.1020.jar",
-            "MD5": "d471a094c92c0e91a0da4fa3634a821d"
-          },
-          "required": {
-            "value": false,
-            "def": false
-          }
-        },
-        {
           "id": "stepsword.mahoutsukai:mahoutsukai:1.19.2-v1.34.62@jar",
           "name": "Mahou Tsukai",
           "type": "ForgeMod",
@@ -925,6 +911,17 @@
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/files/shaderpacks/%C2%A7r%C2%A7lAstra%C2%A74%C2%A7lLex%C2%A7r%C2%A7l_By_LexBoosT_%C2%A74%C2%A7lV80.2%C2%A7r%C2%A7l.zip.txt",
             "MD5": "49e3985137e4f53a39a7a6c93beb92c6",
             "path": "shaderpacks/§r§lAstra§4§lLex§r§l_By_LexBoosT_§4§lV80.2§r§l.zip.txt"
+          }
+        },
+        {
+          "id": "jenny.mp4",
+          "name": "jenny.mp4",
+          "type": "File",
+          "artifact": {
+            "size": 7494722,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/files/video/jenny.mp4",
+            "MD5": "6a47a5c9cb401831f7e8d0b86362d1ed",
+            "path": "video/jenny.mp4"
           }
         }
       ]
