@@ -523,6 +523,16 @@
           }
         },
         {
+          "id": "com.tom:cpm:0.6.20a@jar",
+          "name": "Customizable Player Models",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2763108,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/CustomPlayerModels-1.19-0.6.20a.jar",
+            "MD5": "1a340e80952b1c5fa9c14a7405edb146"
+          }
+        },
+        {
           "id": "net.aurelj:dungeons_arise:2.1.56-1.19.2@jar",
           "name": "When Dungeons Arise",
           "type": "ForgeMod",
