@@ -815,6 +815,16 @@
           }
         },
         {
+          "id": "net.mcreator.undeadrevamp:undead_revamp2:1.0.0@jar",
+          "name": "Undead_revamp2",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 4835383,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/THEUNDEADREVAMPED_1.0c_1.19.2[anotherLAST%201.19.2].jar",
+            "MD5": "fc9c8c9727cc50f69fc6e4f5afde544d"
+          }
+        },
+        {
           "id": "tannyjung.tht:tht:4.4.6.3@jar",
           "name": "Tan's Huge Trees",
           "type": "ForgeMod",
