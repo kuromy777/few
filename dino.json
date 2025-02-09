@@ -483,6 +483,16 @@
           }
         },
         {
+          "id": "vazkii.arl:autoreglib:1.8.2-55@jar",
+          "name": "AutoRegLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 45741,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/AutoRegLib-1.8.2-55.jar",
+            "MD5": "8d0cfc46ea0c7334ff511eff2bb3e9ce"
+          }
+        },
+        {
           "id": "net.mcreator.itemsdedinoflyu:items_de_dinoflyu:1.0.0@jar",
           "name": "Items de DINOFLY7u7",
           "type": "ForgeMod",
@@ -560,6 +570,16 @@
             "size": 1578779,
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/embeddium-0.3.18+mc1.19.2.jar",
             "MD5": "7ffa63e163766e4ba4219ab50eef3849"
+          }
+        },
+        {
+          "id": "com.hrznstudio:emojiful:4.0.5@jar",
+          "name": "Emojiful",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 260759,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/Emojiful-Forge-1.19.2-4.0.5-all.jar",
+            "MD5": "0dc5d349039bf0088bf59ebfa5429de3"
           }
         },
         {
