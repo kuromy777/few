@@ -627,6 +627,16 @@
           }
         },
         {
+          "id": "xyz.apex.forge.fantasyfurniture.core:fantasyfurniture:6.7.0@jar",
+          "name": "Fantasy's Furniture",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3215770,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/fantasyfurniture-1.19.2-6.7.0.jar",
+            "MD5": "d4b49008c7586cdc7cd3eeb9ed45bfa6"
+          }
+        },
+        {
           "id": "net.mcreator:comida:1.0.0@jar",
           "name": "Comida",
           "type": "ForgeMod",
@@ -687,6 +697,16 @@
           }
         },
         {
+          "id": "net.mcreator.knightquest:knight_quest:1.2.7@jar",
+          "name": "Knight Quest",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2076463,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/KnightQuest1.2.7.Patch.jar",
+            "MD5": "d56ed61ee7c67680c3b35f513cd55b5f"
+          }
+        },
+        {
           "id": "stepsword.mahoutsukai:mahoutsukai:1.19.2-v1.34.62@jar",
           "name": "Mahou Tsukai",
           "type": "ForgeMod",
@@ -731,6 +751,16 @@
           }
         },
         {
+          "id": "com.yahoo.chirpycricket:mythicmounts:19.2-7.3-forge@jar",
+          "name": "MythicMounts",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 4371070,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/mythicmounts-19.2-7.2.1-forge.jar",
+            "MD5": "1a662614256df8108facda7cab91f9f1"
+          }
+        },
+        {
           "id": "net.coderbot.iris:oculus:1.6.9@jar",
           "name": "Oculus",
           "type": "ForgeMod",
@@ -742,6 +772,16 @@
           "required": {
             "value": false,
             "def": false
+          }
+        },
+        {
+          "id": "vazkii.patchouli:patchouli:1.19.2-77@jar",
+          "name": "Patchouli",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 635370,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/Patchouli-1.19.2-77.jar",
+            "MD5": "5727784bad9e215a74a64107c1e45036"
           }
         },
         {
@@ -762,6 +802,16 @@
             "size": 181297,
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/player-animation-lib-forge-1.0.2.jar",
             "MD5": "32be10092ee8672a2e3a36a019007a96"
+          }
+        },
+        {
+          "id": "vazkii.quark.base:quark:3.4-418@jar",
+          "name": "Quark",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 15024651,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/Quark-3.4-418.jar",
+            "MD5": "3cac1bb0a53b47bd7dec351b6d675de7"
           }
         },
         {
