@@ -617,6 +617,16 @@
           }
         },
         {
+          "id": "dev.ftb.mods:ftbchunks:1902.4.7-build.420@jar",
+          "name": "FTB Chunks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 836309,
+            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/ftb-chunks-forge-1902.4.7-build.420.jar",
+            "MD5": "bdf72a493017a1902fdaa2ef0975f4db"
+          }
+        },
+        {
           "id": "dev.ftb.mods:ftblibrary:1902.4.1-build.236@jar",
           "name": "FTB Library",
           "type": "ForgeMod",
