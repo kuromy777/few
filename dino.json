@@ -913,9 +913,9 @@
           "name": "DeathAnimation.zip",
           "type": "File",
           "artifact": {
-            "size": 7232827,
+            "size": 3307090,
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/files/resourcepacks/DeathAnimation.zip",
-            "MD5": "910a85637779d673fe83d1e39b07e49b",
+            "MD5": "06da4b5eb14939bab6f796be3d3c21b6",
             "path": "resourcepacks/DeathAnimation.zip"
           }
         },
