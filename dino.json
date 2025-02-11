@@ -815,16 +815,6 @@
           }
         },
         {
-          "id": "vazkii.quark.base:quark:3.4-418@jar",
-          "name": "Quark",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 15024651,
-            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/Quark-3.4-418.jar",
-            "MD5": "3cac1bb0a53b47bd7dec351b6d675de7"
-          }
-        },
-        {
           "id": "terrablender.core:terrablender:2.0.1.166@jar",
           "name": "TerraBlender",
           "type": "ForgeMod",
@@ -862,16 +852,6 @@
             "size": 2385488,
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/totems%20kuromy%202.0.jar",
             "MD5": "49f4eeab600a37e202e34a3c94a31d55"
-          }
-        },
-        {
-          "id": "de.maxhenkel:voicechat:1.19.2-2.5.17@jar",
-          "name": "Simple Voice Chat",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 8149449,
-            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/voicechat-forge-1.19.2-2.5.17.jar",
-            "MD5": "e9956d3375c3465e97cbf8c326e39dfd"
           }
         },
         {
