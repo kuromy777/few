@@ -603,16 +603,6 @@
           }
         },
         {
-          "id": "yesman.epicfight.main:epicfight:19.5.24@jar",
-          "name": "Epic Fight",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 5776493,
-            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/EpicFight-19.5.24.jar",
-            "MD5": "10546aff7e13926c0203a8b58be5036c"
-          }
-        },
-        {
           "id": "de.cheaterpaul:fallingleaves:1.3.1@jar",
           "name": "Falling Leaves",
           "type": "ForgeMod",
@@ -855,16 +845,6 @@
           }
         },
         {
-          "id": "net.mcreator.undeadrevamp:undead_revamp2:1.0.0@jar",
-          "name": "Undead_revamp2",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 4835383,
-            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/THEUNDEADREVAMPED_1.0c_1.19.2[anotherLAST%201.19.2].jar",
-            "MD5": "fc9c8c9727cc50f69fc6e4f5afde544d"
-          }
-        },
-        {
           "id": "tannyjung.tht:tht:4.4.6.3@jar",
           "name": "Tan's Huge Trees",
           "type": "ForgeMod",
@@ -892,16 +872,6 @@
             "size": 8149449,
             "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/voicechat-forge-1.19.2-2.5.17.jar",
             "MD5": "e9956d3375c3465e97cbf8c326e39dfd"
-          }
-        },
-        {
-          "id": "reascer.wom.main:wom:19.1.7.37@jar",
-          "name": "Weapons of Minecraft",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 10102831,
-            "url": "https://launcherservertest.web.app/host/servers/Yokai-1.19.2/forgemods/required/WeaponsOfMiracles-19.1.7.37.jar",
-            "MD5": "8ccca09ba92f6f8812390c83fc3ef5a1"
           }
         },
         {
