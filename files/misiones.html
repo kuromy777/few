@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misiones Diarias - Minecraft Launcher</title>
+
+    <style>
+                @font-face {
+            font-family: 'Minercraftory';
+            src: url('https://kuromy777.github.io/few/Minercraftory.ttf') format('truetype');
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c3400;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            justify-content: flex-start; /* Esto alinea todo al top */
+        }
+
+        h1 {
+            font-size: 32px;
+            color: white;
+            margin-top: 20px; /* Alineación hacia el top */
+            margin-bottom: 20px;
+        }
+
+        .missions-container {
+            display: grid;
+            grid-template-columns: repeat(10, 70px);
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .mission {
+            width: 70px;
+            height: 70px;
+            background-color: #0000005c;
+            border-radius: 5px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+            border: 3px solid #444;
+        }
+
+        .mission:hover {
+            transform: scale(1.05);
+        }
+
+        .mission img {
+            width: 60%;
+        }
+
+        .locked img {
+            width: 50%;
+            opacity: 0.5;
+        }
+
+        .locked {
+            cursor: not-allowed;
+            pointer-events: none;
+            filter: grayscale(100%);
+        }
+
+        #crafting-area {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    visibility: hidden;  /* Usar visibility en lugar de display */
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0s 0.5s; /* Asegurar que visibility cambie después de la transición */
+    color: white;
+    z-index: 10;
+}
+
+#crafting-area.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0s 0s; /* Asegurar que visibility se activa de inmediato */
+}
+
+
+        #mission-details {
+            display: none;
+            position: fixed;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            z-index: 100;
+        }
+
+        #mission-details .close-btn {
+            margin-top: 20px;
+            background: #ff3333;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #mission-details input[type="checkbox"] {
+            margin-top: 15px;
+        }
+
+        #mission-details .accept-btn {
+            background: #4d00ff;
+            color: white;
+            padding: 5px 10px;
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: lime;
+            display: none;
+        }
+
+        .mission.completed .checkmark {
+            display: block;
+        }
+
+        .mission.transitioned {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="font-family: 'Minercraftory';">Misiones Diarias</h1>
+
+    <div class="missions-container" id="missions"></div>
+
+    <div id="crafting-area">
+        <img id="craft-image" src="" alt="Imagen de Crafteo">
+    </div>
+
+    <div id="mission-details">
+        <h3>Descripción de la Misión</h3>
+        <p id="mission-description">Detalles sobre la misión seleccionada.</p>
+        <img id="mission-detail-image" src="" alt="Crafteo" style="width: 100%; margin-top: 10px;">
+        <div>
+            <label>
+                <input type="checkbox" id="complete-checkbox"> 
+            </label>
+        </div>
+        <button class="accept-btn" onclick="acceptMission()">Aceptar</button>
+    </div>
+
+    <script>
+        const missionsContainer = document.getElementById('missions');
+        const missionDetails = document.getElementById('mission-details');
+        const missionDescription = document.getElementById('mission-description');
+        const missionDetailImage = document.getElementById('mission-detail-image');
+        const completeCheckbox = document.getElementById('complete-checkbox');
+        const craftingArea = document.getElementById('crafting-area');
+        const craftImage = document.getElementById('craft-image');
+        let currentMission = null;
+        const casillaIcons = {
+    1: "https://kuromy777.github.io/few/1.png",
+    2: "https://kuromy777.github.io/few/2.png",
+    3: "https://kuromy777.github.io/few/3.png",
+    4: "https://kuromy777.github.io/few/4.png",
+    5: "https://kuromy777.github.io/few/5.png",
+    6: "https://kuromy777.github.io/few/6.png",
+    7: "https://kuromy777.github.io/few/7.png",
+    8: "https://kuromy777.github.io/few/8.png",
+    9: "https://kuromy777.github.io/few/9.png",
+    10: "https://kuromy777.github.io/few/10.png",
+    11: "https://kuromy777.github.io/few/11.png",
+    12: "https://kuromy777.github.io/few/12.png",
+    13: "https://kuromy777.github.io/few/13.png",
+    14: "https://kuromy777.github.io/few/14.png",
+    15: "https://kuromy777.github.io/few/15.png",
+    16: "https://kuromy777.github.io/few/16.png",
+    17: "https://kuromy777.github.io/few/17.png",
+    18: "https://kuromy777.github.io/few/18.png",
+    19: "https://kuromy777.github.io/few/19.png",
+    20: "https://kuromy777.github.io/few/20.png",
+    21: "https://kuromy777.github.io/few/21.png",
+    22: "https://kuromy777.github.io/few/22.png",
+    23: "https://kuromy777.github.io/few/23.png",
+    24: "https://kuromy777.github.io/few/24.png",
+    25: "https://kuromy777.github.io/few/25.png",
+    26: "https://kuromy777.github.io/few/26.png",
+    27: "https://kuromy777.github.io/few/27.png",
+    28: "https://kuromy777.github.io/few/28.png",
+    29: "https://kuromy777.github.io/few/29.png",
+    30: "https://kuromy777.github.io/few/30.png"
+        };
+
+        // Array de URLs para las imágenes de crafteo
+        const craftIcons = {
+            1: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c2/Netherite_Upgrade_Smithing_Template_JE1_BE1.png/revision/latest?cb=20230321045108",
+            2: "https://www.minecraft-crafting.net/app/src/Basic/craft/craft_torch.png",
+            3: "https://example.com/craft3.png",
+            4: "https://example.com/craft4.png",
+            5: "https://example.com/craft5.png",
+            6: "https://example.com/craft6.png",
+            7: "https://example.com/craft7.png",
+            8: "https://example.com/craft8.png",
+            9: "https://example.com/craft9.png",
+            10: "https://example.com/craft10.png",
+            11: "https://example.com/craft11.png",
+            12: "https://example.com/craft12.png",
+            13: "https://example.com/craft13.png",
+            14: "https://example.com/craft14.png",
+            15: "https://example.com/craft15.png",
+            16: "https://example.com/craft16.png",
+            17: "https://example.com/craft17.png",
+            18: "https://example.com/craft18.png",
+            19: "https://example.com/craft19.png",
+            20: "https://example.com/craft20.png",
+            21: "https://example.com/craft21.png",
+            22: "https://example.com/craft22.png",
+            23: "https://example.com/craft23.png",
+            24: "https://example.com/craft24.png",
+            25: "https://example.com/craft25.png",
+            26: "https://example.com/craft26.png",
+            27: "https://example.com/craft27.png",
+            28: "https://example.com/craft28.png",
+            29: "https://example.com/craft29.png",
+            30: "https://example.com/craft30.png"
+        };
+
+        // Array de descripciones de las misiones
+        const descriptions = {
+            1: "Descripción de la misión 1",
+            2: "Aldeanos de la isla piña han encontrado un mapa del tesoro! Deberas viajar al end!\nCORDENADAS: 125 82 8763",
+            3: "Descripción de la misión 3",
+            4: "Descripción de la misión 4",
+            5: "Descripción de la misión 5",
+            6: "Descripción de la misión 6",
+            7: "Descripción de la misión 7",
+            8: "Descripción de la misión 8",
+            9: "Descripción de la misión 9",
+            10: "Descripción de la misión 10",
+            11: "Descripción de la misión 11",
+            12: "Descripción de la misión 12",
+            13: "Descripción de la misión 13",
+            14: "Descripción de la misión 14",
+            15: "Descripción de la misión 15",
+            16: "Descripción de la misión 16",
+            17: "Descripción de la misión 17",
+            18: "Descripción de la misión 18",
+            19: "Descripción de la misión 19",
+            20: "Descripción de la misión 20",
+            21: "Descripción de la misión 21",
+            22: "Descripción de la misión 22",
+            23: "Descripción de la misión 23",
+            24: "Descripción de la misión 24",
+            25: "Descripción de la misión 25",
+            26: "Descripción de la misión 26",
+            27: "Descripción de la misión 27",
+            28: "Descripción de la misión 28",
+            29: "Descripción de la misión 29",
+            30: "Descripción de la misión 30"
+        };
+
+        const descriptionImages = {         
+            1: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c2/Netherite_Upgrade_Smithing_Template_JE1_BE1.png/revision/latest?cb=20230321045108",
+            2: "https://blobs-infiniteugc.svc.halowaypoint.com/ugcstorage/map/96623412-a49b-47f3-b5de-06444ab6fdf9/95bd5136-ce3a-467a-bbb8-065638bfb3db/images/thumbnail.jpg",
+            3: "https://example.com/craft3.png",
+            4: "https://example.com/craft4.png",
+            5: "https://example.com/craft5.png",
+            6: "https://example.com/craft6.png",
+            7: "https://example.com/craft7.png",
+            8: "https://example.com/craft8.png",
+            9: "https://example.com/craft9.png",
+            10: "https://example.com/craft10.png",
+            11: "https://example.com/craft11.png",
+            12: "https://example.com/craft12.png",
+            13: "https://example.com/craft13.png",
+            14: "https://example.com/craft14.png",
+            15: "https://example.com/craft15.png",
+            16: "https://example.com/craft16.png",
+            17: "https://example.com/craft17.png",
+            18: "https://example.com/craft18.png",
+            19: "https://example.com/craft19.png",
+            20: "https://example.com/craft20.png",
+            21: "https://example.com/craft21.png",
+            22: "https://example.com/craft22.png",
+            23: "https://example.com/craft23.png",
+            24: "https://example.com/craft24.png",
+            25: "https://example.com/craft25.png",
+            26: "https://example.com/craft26.png",
+            27: "https://example.com/craft27.png",
+            28: "https://example.com/craft28.png",
+            29: "https://example.com/craft29.png",
+            30: "https://example.com/craft30.png"};
+
+            const missionTitles = {
+    1: "Título de la misión 1 POTO",
+    2: "ADENTRATE EN LA OSCURIDAD",
+    3: "Título de la misión 3",
+    4: "Título de la misión 4",
+    5: "Título de la misión 5",
+    6: "Título de la misión 6",
+    7: "Título de la misión 7",
+    8: "Título de la misión 8",
+    9: "Título de la misión 9",
+    10: "Título de la misión 10",
+    11: "Título de la misión 11",
+    12: "Título de la misión 12",
+    13: "Título de la misión 13",
+    14: "Título de la misión 14",
+    15: "Título de la misión 15",
+    16: "Título de la misión 16",
+    17: "Título de la misión 17",
+    18: "Título de la misión 18",
+    19: "Título de la misión 19",
+    20: "Título de la misión 20",
+    21: "Título de la misión 21",
+    22: "Título de la misión 22",
+    23: "Título de la misión 23",
+    24: "Título de la misión 24",
+    25: "Título de la misión 25",
+    26: "Título de la misión 26",
+    27: "Título de la misión 27",
+    28: "Título de la misión 28",
+    29: "Título de la misión 29",
+    30: "Título de la misión 30"
+};
+
+        const lockIcon = "https://static.vecteezy.com/system/resources/previews/032/479/653/non_2x/security-padlock-pixel-art-free-png.png"; // URL de la imagen del candado
+
+
+        const missions = Array.from({ length: 30 }, (_, i) => ({
+            id: i + 1,
+            description: descriptions[i + 1],
+            iconUrl: casillaIcons[i + 1],
+            craftImageUrl: craftIcons[i + 1],
+            descriptionImageUrl: descriptionImages[i + 1]
+        }));
+
+        // Estados de las misiones: DISPONIBLE o BLOQUEADO
+        const missionStatuses = {
+            1: "BLOQUEADO",
+            2: "DISPONIBLE",
+            3: "DISPONIBLE",
+            4: "DISPONIBLE",
+            5: "DISPONIBLE",
+            6: "DISPONIBLE",
+            7: "DISPONIBLE",
+            8: "DISPONIBLE",
+            9: "DISPONIBLE",
+            10: "DISPONIBLE",
+            11: "DISPONIBLE",
+            12: "DISPONIBLE",
+            13: "DISPONIBLE",
+            14: "DISPONIBLE",
+            15: "DISPONIBLE",
+            16: "DISPONIBLE",
+            17: "DISPONIBLE",
+            18: "DISPONIBLE",
+            19: "DISPONIBLE",
+            20: "DISPONIBLE",
+            21: "DISPONIBLE",
+            22: "DISPONIBLE",
+            23: "DISPONIBLE",
+            24: "DISPONIBLE",
+            25: "DISPONIBLE",
+            26: "DISPONIBLE",
+            27: "DISPONIBLE",
+            28: "DISPONIBLE",
+            29: "DISPONIBLE",
+            30: "DISPONIBLE"
+        };
+        // Cargar el estado guardado de las misiones desde localStorage
+        function loadMissionState() {
+            return JSON.parse(localStorage.getItem('missionState')) || {};
+        }
+
+        // Guardar el estado de las misiones en localStorage
+        function saveMissionState(state) {
+            localStorage.setItem('missionState', JSON.stringify(state));
+        }
+
+        const missionState = loadMissionState();
+
+        missions.forEach((mission) => {
+            const missionDiv = document.createElement('div');
+            missionDiv.classList.add('mission');
+            missionDiv.dataset.id = mission.id;
+
+            const img = document.createElement('img');
+            img.src = missionStatuses[mission.id] === "DISPONIBLE" ? mission.iconUrl : lockIcon;
+
+            missionDiv.appendChild(img);
+
+            const checkmark = document.createElement('div');
+            checkmark.classList.add('checkmark');
+            checkmark.innerHTML = '✔';
+            missionDiv.appendChild(checkmark);
+
+            if (missionStatuses[mission.id] === "BLOQUEADO") {
+                missionDiv.classList.add('locked');
+            } else {
+                // Asignar el estado de completado a la misión al cargar
+                if (missionState[mission.id]) {
+                    missionDiv.classList.add('completed');
+                }
+                let hoverTimeout;
+
+missionDiv.addEventListener('mouseenter', () => {
+    // Si ya hay un temporizador pendiente de ser ejecutado, lo cancelamos
+    if (hoverTimeout) clearTimeout(hoverTimeout);
+
+    // Establecemos un nuevo temporizador para mostrar la superposición después de un pequeño retraso (200ms)
+    hoverTimeout = setTimeout(() => {
+        craftImage.src = mission.craftImageUrl;
+        craftingArea.classList.add('show');  // Mostramos la superposición
+    }, 400); // 200ms de retraso antes de mostrar la superposición
+});
+
+missionDiv.addEventListener('mouseleave', () => {
+    // Cancelamos cualquier temporizador pendiente de ser ejecutado si el ratón sale antes de que se haya activado
+    if (hoverTimeout) clearTimeout(hoverTimeout);
+
+    // Ocultamos la superposición inmediatamente cuando el ratón sale de la casilla
+    craftingArea.classList.remove('show');
+});
+
+// Agregar un evento global de click para ocultar la superposición si el clic no es en una casilla
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.mission')) {
+        craftingArea.classList.remove('show');
+    }
+});
+
+
+
+                missionDiv.onclick = () => showMissionDetails(mission);
+            }
+
+            missionsContainer.appendChild(missionDiv);
+        });
+
+        function showMissionDetails(mission) {
+            currentMission = mission;
+            missionDescription.textContent = mission.description;
+            const missionTitle = missionTitles[mission.id] || "Descripción de la Misión";
+            missionDetails.querySelector('h3').textContent = missionTitle;
+            missionDetailImage.src = mission.descriptionImageUrl;
+            missionDetails.style.display = 'block';
+
+            // Actualizar el estado del checkbox según el estado de la misión
+            completeCheckbox.checked = missionState[mission.id] || false;
+        }
+
+        function acceptMission() {
+            const missionElement = document.querySelector('.mission[data-id="' + currentMission.id + '"]');
+
+            // Guardar el estado del checkbox en el localStorage
+            missionState[currentMission.id] = completeCheckbox.checked;
+
+            // Actualizar la clase 'completed' en la misión
+            if (completeCheckbox.checked) {
+                missionElement.classList.add('completed');
+            } else {
+                missionElement.classList.remove('completed');
+            }
+
+            // Guardar el estado actualizado en localStorage
+            saveMissionState(missionState);
+
+            // Cerrar el cuadro de detalles
+            missionDetails.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
+
